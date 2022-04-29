@@ -66,6 +66,7 @@ public class EnumUsageExamples {
         getLogLevelMessageUsingIf(LogLevel.WARNING) -> "It's WARNING!"
 
      */
+//  return is an automatic break
     public String getLogLevelMessageUsingIf(LogLevel logLevel) {
         if(logLevel == LogLevel.DEBUG){
             return "It's DEBUG!";
@@ -87,20 +88,18 @@ public class EnumUsageExamples {
 
      */
 
-    String getLogLevelMessageUsingSwitchCase(LogLevel logLevel) {
+    public String getLogLevelMessageUsingSwitchCase(LogLevel logLevel) {
     //  pass the variable to a switch-case statement to return a specific message
-//        LogLevel logLevel = LogLevel.DEBUG;
-//        switch(logLevel) {
-//            case DEBUG:
-//                return "It's DEBUG";
-//                break;
-//            case INFO:
-//                return "IT's INFO";
-//                break;
-//            case WARNING:
-//                return "It's WARNING";
-//                break;
-//        }
+        switch (logLevel) {
+            case DEBUG:
+                return "It's DEBUG!";
+
+            case INFO:
+                return "It's INFO!";
+
+            case WARNING:
+                return "It's WARNING!";
+        }
         return null;
     }
 

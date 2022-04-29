@@ -6,11 +6,11 @@ public enum LogLevel {
     WARNING("It's WARNING",true);
 
     private final String displayName;
-    private final boolean sendsSmsToAdmin;
+    private final boolean sendToAdmin;
 
-    LogLevel(String displayName, boolean sendsSmsToAdmin){
+    LogLevel(String displayName, boolean sendToAdmin){
         this.displayName = displayName;
-        this.sendsSmsToAdmin = sendsSmsToAdmin;
+        this.sendToAdmin = sendToAdmin;
     }
 
     public String getDisplayName(){
@@ -18,7 +18,7 @@ public enum LogLevel {
     }
 
     public boolean isSendSMSToAdmin(){
-        return this.sendsSmsToAdmin;
+        return this.sendToAdmin;
     }
 
     /*
