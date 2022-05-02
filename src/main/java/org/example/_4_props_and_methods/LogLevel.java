@@ -1,25 +1,26 @@
 package org.example._4_props_and_methods;
 
 public enum LogLevel {
-    DEBUG("It's DEBUG", false),
-    INFO("It's INFO",false),
-    WARNING("It's WARNING",true);
+    DEBUG("It's DEBUG!", false),
+    INFO("It's INFO!",false),
+    WARNING("It's WARNING!",true);
 
-    private final String displayName;
-    private final boolean sendToAdmin;
+    private final String getDisplayName;
+    private final boolean sendSMSToAdmin;
 
-    LogLevel(String displayName, boolean sendToAdmin){
-        this.displayName = displayName;
-        this.sendToAdmin = sendToAdmin;
+    LogLevel(String getDisplayName, boolean sendSMSToAdmin){
+        this.getDisplayName = getDisplayName;
+        this.sendSMSToAdmin = sendSMSToAdmin;
     }
 
-    public String getDisplayName(){
-        return this.displayName;
+    public String getGetDisplayName(){
+        return this.getDisplayName;
     }
 
     public boolean isSendSMSToAdmin(){
-        return this.sendToAdmin;
+        return this.sendSMSToAdmin;
     }
+
 
     /*
         TODO 8 add the below properties and set them in the constructor
