@@ -21,7 +21,6 @@ public enum LogLevel {
         return this.sendSMSToAdmin;
     }
 
-
     /*
         TODO 8 add the below properties and set them in the constructor
          -String displayName
